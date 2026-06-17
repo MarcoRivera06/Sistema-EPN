@@ -1,19 +1,18 @@
 package epn.sistema;
 
-public class Atenea extends SistemaEpn implements IAccion {
-    private String tipoCertificado;
-    private 
+public class Atenea extends SistemaEPN implements IAccion {
+    private String TipoDeCertificado;
+    public Atenea() {
+    }
     @Override
     public boolean on() {
-        System.out.println("on Atenea");
+        System.out.println("Atenea encendida");
         return true;
     }
-
     @Override
     public boolean off() {
-        System.out.println("off Atenea");
+        System.out.println("Atenea apagada");
         return true;
     }
-
 
 }

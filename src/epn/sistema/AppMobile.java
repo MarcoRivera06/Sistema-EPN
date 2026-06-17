@@ -1,20 +1,17 @@
 package epn.sistema;
 
-import epn.usuario.Estudiante;
-
-public class AppMobile extends SistemaEpn implements IAccion {
-
+public class AppMobile extends SistemaEPN implements IAccion {
+    public AppMobile() {
+    }
     @Override
     public boolean on() {
-        System.out.println("on AppMobile");
+        System.out.println("AppMobile encendida");
         return true;
     }
-
     @Override
     public boolean off() {
-        System.out.println("off AppMobile");
+        System.out.println("AppMobile apagada");
         return true;
     }
-
 
 }
